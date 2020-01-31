@@ -15,7 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:mochawesome": "cypress run --reporter mochawesome"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,6 +34,8 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^3.8.3"
+    "cypress": "^3.8.3",
+    "mocha": "^5.0.0",
+    "mochawesome": "^4.1.0"
   }
 }
