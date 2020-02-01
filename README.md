@@ -2,7 +2,7 @@
 
 ## Cypress installation
 ```
-npm install cypress
+npm install --save-dev cypress
 ```
 
 ## Reporters
@@ -12,6 +12,11 @@ npm install cypress
 Required packages
 - mocha
 - mochawesome
+
+```
+npm install mocha@^5.0.0
+npm install mochawesome
+```
 
 Issues:
 - requires mocha version ^5.0.0, with 6+ won't work
