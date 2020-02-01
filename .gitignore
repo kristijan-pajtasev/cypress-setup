@@ -25,4 +25,4 @@ yarn-error.log*
 .idea
 cypress/videos
 mochawesome-report
-.nyc
+.nyc_output
