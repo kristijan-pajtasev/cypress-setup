@@ -16,7 +16,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
-    "cypress:mochawesome": "cypress run --reporter mochawesome",
     "cypress:coverage": "cypress run --headless"
   },
   "eslintConfig": {
