@@ -16,7 +16,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
-    "cypress:mochawesome": "cypress run --reporter mochawesome"
+    "cypress:mochawesome": "cypress run --reporter mochawesome",
+    "cypress:coverage": "cypress run --headless"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,8 +35,12 @@
     ]
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^1.11.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "cypress": "^3.8.3",
+    "istanbul-lib-coverage": "^3.0.0",
     "mocha": "^5.0.0",
-    "mochawesome": "^4.1.0"
+    "mochawesome": "^4.1.0",
+    "nyc": "^15.0.0"
   }
 }
