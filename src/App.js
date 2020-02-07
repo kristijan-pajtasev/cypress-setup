@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {add} from './service';
 
 function App() {
+  const [user, setUser] = useState({firstName: "", lastName: ""});
+
+  useEffect(() => {}, [
+
+  ]);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +25,10 @@ function App() {
         >
           Learn React{add(2,3)}
         </a>
+
+        <div>
+          Hello {user.firstName} {user.lastName}
+        </div>
       </header>
     </div>
   );
