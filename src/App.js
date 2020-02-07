@@ -6,11 +6,11 @@ import {add} from './service';
 function App() {
   const [user, setUser] = useState({firstName: "", lastName: ""});
 
-  useEffect(() => {}, [
+  useEffect(() => {
     fetch('/data.json').then(
         res => res.json().then(setUser)
     )
-  ]);
+  }, []);
 
   return (
     <div className="App">
@@ -28,7 +28,7 @@ function App() {
           Learn React{add(2,3)}
         </a>
 
-        <div>
+        <div id="userMessage">
           Hello {user.firstName} {user.lastName}
         </div>
       </header>
