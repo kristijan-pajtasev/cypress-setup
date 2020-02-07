@@ -1,5 +1,8 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
+
+app.use(cors())
 
 app.get("/data", (req, res) => {
     setTimeout(() => {
@@ -7,7 +10,7 @@ app.get("/data", (req, res) => {
             "firstName": "john",
             "lastName": "doe"
         })
-    }, 2000)
+    }, 15000)
 
 });
 

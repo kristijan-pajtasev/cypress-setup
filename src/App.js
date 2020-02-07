@@ -7,7 +7,15 @@ function App() {
   const [user, setUser] = useState({firstName: "", lastName: ""});
 
   useEffect(() => {
-    fetch('/data.json').then(
+    fetch('http://127.0.0.1:3002/data', {
+      // mode:'no-cors',
+      // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      // credentials: 'same-origin', // include, *same-origin, omit
+      // headers: {
+      //   'Content-Type': 'application/json'
+      //   // 'Content-Type': 'application/x-www-form-urlencoded',
+      // }
+    }).then(
         res => res.json().then(setUser)
     )
   }, []);
