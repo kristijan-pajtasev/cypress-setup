@@ -7,7 +7,9 @@ function App() {
   const [user, setUser] = useState({firstName: "", lastName: ""});
 
   useEffect(() => {}, [
-
+    fetch('/data.json').then(
+        res => res.json().then(setUser)
+    )
   ]);
 
   return (
