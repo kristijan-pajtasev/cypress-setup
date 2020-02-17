@@ -25,6 +25,7 @@ yarn-error.log*
 .idea
 cypress/videos
 cypress/screenshots
+cypress/reports
 mochawesome-report
 .nyc_output
 debug.log
