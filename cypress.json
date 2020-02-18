@@ -2,10 +2,10 @@
   "reporter": "mochawesome",
   "reporterOptions": {
     "charts": false,
-    "html": true,
+    "html": false,
     "json": true,
-    "reportDir": "cypress/reports",
+    "reportDir": "cypress/reports/mochawesome-report",
     "reportFilename": "report",
-    "overwrite": true
+    "overwrite": false
   }
 }
