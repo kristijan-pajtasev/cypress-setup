@@ -1,4 +1,4 @@
-import {add} from './service';
+import {add} from '../../../src/service';
 
 describe("Add service", () => {
     it("will add two numbers correctly", () => {
