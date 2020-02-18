@@ -20,7 +20,8 @@
     "cypress:run:integration": "cypress run --headless --browser chrome  --spec cypress/integration/**.spec.js",
     "cypress:run": "cypress run --headless --browser chrome",
     "merge": "mochawesome-merge cypress/reports/mochawesome-report/*.json > cypress/reports/output.json",
-    "generate_mochawesome_report": "marge cypress/reports/output.json --reportDir ./ --inline"
+    "generate_mochawesome_report": "marge cypress/reports/output.json --reportDir ./ --inline",
+    "delete_reports": "node deleteReports.js"
   },
   "eslintConfig": {
     "extends": "react-app"
