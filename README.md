@@ -16,7 +16,25 @@ cypress run
 ```
 
 ## Options
+--browser
+```
+cypress run --browser chrome
+```
 
+--headless
+```
+cypress run --headless
+```
+
+--spec
+```
+cypress run --spec folder/test.spec.js
+```
+
+--config-file
+```
+cypress run --config-file test/cypress.json
+```
 
 ## Reporters
 
