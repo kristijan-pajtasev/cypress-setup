@@ -5,6 +5,19 @@
 npm install --save-dev cypress
 ```
 
+## Running
+Headed
+```
+cypress open
+```
+Headless
+```
+cypress run
+```
+
+## Options
+
+
 ## Reporters
 
 ### Mochawesome
