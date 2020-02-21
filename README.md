@@ -119,3 +119,30 @@ fs.rmdirSync("./cypress/reports", {recursive: true});
 ```
 
 ### Coverage
+
+#### Installation
+```
+npm install --save-de @cypress/code-coverage babel-plugin-transform-class-properties instanbul-lib-coverage mocha@^5.2.0 nyc
+```
+
+#### .babelrc
+```
+{
+  "presets": ["@babel/preset-react"],
+  "plugins": ["transform-class-properties", "istanbul"]
+}
+```
+
+#### cypress/support/index.js
+```
+import '@cypress/code-coverage/support'
+```
+
+#### cypress/plugins/index.js
+```
+module.exports = (on, config) => {
+    on('task', require('@cypress/code-coverage/task'));
+    on('file:preprocessor', require('@cypress/code-coverage/use-babelrc'));
+    return config;
+}
+```
