@@ -23,8 +23,32 @@ npm install mochawesome
 cypress run --reporter mochawesome
 ```
 
+#### cypress.json config
+
+Adding reporter
+```
+{
+  "reporter": "mochawesome"
+}
+```
+
+Reporter options
+```
+{
+  "reporter": "mochawesome",
+    "reporterOptions": {
+        "charts": true,
+        "html": true,
+        "json": true,
+        "reportDir": "cypress/reports",
+        "reportFilename": "report"
+      }
+}
+```
+
 Issues:
 - requires mocha version ^5.0.0, with 6+ won't work
+- generates report per test suite
 
 ### Merging mochawesome reports
 
