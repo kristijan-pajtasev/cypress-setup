@@ -20,3 +20,7 @@ npm install mochawesome
 
 Issues:
 - requires mocha version ^5.0.0, with 6+ won't work
+
+### Merging mochawesome reports
+
+### Coverage
