@@ -18,6 +18,11 @@ npm install mocha@^5.0.0
 npm install mochawesome
 ```
 
+#### Running
+```
+cypress run --reporter mochawesome
+```
+
 Issues:
 - requires mocha version ^5.0.0, with 6+ won't work
 
